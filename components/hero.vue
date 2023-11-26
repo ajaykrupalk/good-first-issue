@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-5 flex flex-row justify-between">
+    <div class="pt-5 pb-5 flex flex-row justify-between">
         <div class="relative w-[30em] h-40 overflow-hidden">
             <div class="absolute -left-20 top-0">
                 <sample-issue></sample-issue>
