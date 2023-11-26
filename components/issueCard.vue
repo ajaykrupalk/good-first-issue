@@ -3,10 +3,15 @@
         <div class="p-3">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex flex-row gap-1 items-center">
-                    <img src="https://lirp.cdn-website.com/df735c7c/dms3rep/multi/opt/MicrosoftTeams-image+%28123%29-640w.png" alt="logo" class="h-6 w-6 rounded-md border-2 border-gray-200">
+                    <img src="https://lirp.cdn-website.com/df735c7c/dms3rep/multi/opt/MicrosoftTeams-image+%28123%29-640w.png" alt="avatar" class="h-6 w-6 rounded-md border-2 border-gray-200">
                     <h3 class="font-medium text-lg text-blue-500">openai/whipser</h3>
                 </div>
-                <badge />
+                <badge 
+                    badgeText="3 issues"
+                    bgColor="bg-blue-50"
+                    textColor="text-blue-500"
+                    borderColor="ring-blue-600/10"
+                />
             </div>
             <p class="text-sm">Robust Speech Recognition via Large-Scale Weak Supervision</p>
             <div class="flex flex-row gap-2 mt-2 text-xs text-gray-500 font-medium">
