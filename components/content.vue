@@ -10,6 +10,9 @@
             progLang="Python"
             stars="49.9k"
             lastActivity="Updated 57 minutes ago"
+            issueNum="#1124"
+            issueDesc="About Information not available when logged out"
+            commentCount="4"
         />
         <!-- <Skeleton /> -->
     </div>

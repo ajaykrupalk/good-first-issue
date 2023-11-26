@@ -57,7 +57,7 @@
             <div class="absolute -right-20 top-0">
                 <sample-issue
                     issueHeading="Add CMake aliases"
-                    issueDesc="#123 opened on Sep 05, 2017 by ajaykrupalk"
+                    issueDesc="#123 opened on Sep 05, 2017 by npmcodes"
                     badgeText="good first issue"
                     bgColor="bg-fuchsia-50"
                     textColor="text-fuchsia-500"
