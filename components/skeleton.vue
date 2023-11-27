@@ -1,5 +1,5 @@
 <template>
-    <div class="border-2 border-gray-200 rounded-md w-[40em] h-max">
+    <div class="flex flex-col border-2 border-gray-200 rounded-md w-[40em] h-max">
         <div class="p-3 animate-pulse">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex flex-row gap-1 items-center">

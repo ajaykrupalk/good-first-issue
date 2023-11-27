@@ -39,7 +39,7 @@
             <h4 class="mt-10 font-bold text-black text-4xl">
                 <span
                     class="number tabular-nums text-slate-900 font-extrabold mb-2 animate-[counter_3s_ease-out_forwards] [counter-set:_num_var(--num)] before:content-[counter(num)]">
-                    <span class="sr-only">280</span>K+
+                    <span class="sr-only">200</span>K+
                 </span>
                 <span class="inline-block">
                     <badge

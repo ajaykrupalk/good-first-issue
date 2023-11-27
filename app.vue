@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-[#fefcfb]">
+  <div class="h-full bg-[#fefcfb]">
     <hero/>
     <content/>
   </div>

@@ -9,9 +9,9 @@
 }
 @keyframes counter {
     from {
-        --num: 200;
+        --num: 100;
     }
     to {
-        --num: 280;
+        --num: 200;
     }
 }
