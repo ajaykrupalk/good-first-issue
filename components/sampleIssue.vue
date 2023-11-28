@@ -4,11 +4,10 @@
             <img src="../assets/images/issue.png" alt="issue icon" class="h-4 w-4">
             <h3 class="font-medium text-gray-300 text-lg">{{ props.issueHeading }}</h3>
             <badge 
-                :badgeText="props.badgeText"
                 :bgColor="props.bgColor"
                 :textColor="props.textColor"
                 :borderColor="props.borderColor"
-            ></badge>
+            >good first issue</badge>
         </div>
         <p class="text-gray-300 w-full text-xs">{{ props.issueDesc }}</p>
     </div>
@@ -17,7 +16,6 @@
 const props = defineProps({
     issueHeading: String,
     issueDesc: String,
-    badgeText: String,
     bgColor: String,
     textColor: String,
     borderColor: String

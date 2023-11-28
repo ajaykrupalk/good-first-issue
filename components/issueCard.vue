@@ -1,38 +1,40 @@
 <template>
     <div class="border-2 border-gray-200 rounded-md w-[40em] h-full">
-        <div class="p-3">
+        <div class="p-3 leading-7">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex flex-row gap-1 items-center">
-                    <img :src="props.imgSrc" alt="avatar" class="h-6 w-6 rounded-md border-2 border-gray-200">
-                    <h3 class="font-medium text-lg text-blue-500">{{ props.repo }}</h3>
+                    <img :src="props.imgSrc" alt="avatar" class="h-5 w-5 rounded-md">
+                    <h3 class="font-medium text-xs text-blue-600">{{ props.repo }}</h3>
                 </div>
-                <badge 
-                    :badgeText="`${props.issueCount} issues`"
-                    bgColor="bg-blue-50"
-                    textColor="text-blue-500"
-                    borderColor="ring-blue-600/10"
-                />
+                <badge bgColor="bg-gray-50" textColor="text-gray-500" borderColor="ring-gray-400">
+                    <p class="text-xs">43.3k Stars</p>
+                </badge>
             </div>
-            <p class="text-sm">{{ props.repoDesc }}</p>
-            <div class="flex flex-row gap-2 mt-2 text-xs text-gray-500 font-medium">
-                <div class="flex flex-row gap-1 items-center">
-                    <span class="h-2 w-2 bg-[#3572A5] rounded-full"></span>
-                    {{ props.progLang }}
-                </div>
-                <div class="flex flex-row gap-1 items-center">
-                    <img src="../assets/images/star.png" alt="star" class="h-4 w-4">
-                    <p>{{ props.stars }}</p>
+            <div class="flex flex-row gap-1 font-medium items-center">
+                <div>
+                    <p class="hover:text-blue-500 text-2xl">
+                        {{ props.issueDesc }}
+                        <span class="text-gray-500 text-xl">{{ props.issueNum }}</span>
+                    </p>
                 </div>
                 <div>
-                    <p>{{ props.lastActivity }}</p>
+                    <badge textColor="text-blue-600" borderColor="ring-blue-600/70">
+                        {{ props.progLang }}
+                    </badge>
                 </div>
             </div>
+            <div class="flex flex-row gap-1 text-sm text-gray-500">
+                <p>
+                    <span class="font-medium">{{ props.issueOwner }}</span> opened this issue {{ props.issueActivity }} ago
+                </p>
+                <span>
+                    &#x2022;
+                </span>
+                <p>
+                    {{ props.commentCount }} comments
+                </p>
+            </div>
         </div>
-        <issue 
-            :issueNum="props.issueNum"
-            :issueDesc="props.issueDesc"
-            :commentCount="props.commentCount"
-        />
     </div>
 </template>
 <script setup>
@@ -40,11 +42,11 @@ const props = defineProps({
     imgSrc: String,
     repo: String,
     repoDesc: String,
-    issueCount: String,
+    issueOwner: String,
     colorCode: String,
     progLang: String,
     stars: String,
-    lastActivity: String,
+    issueActivity: String,
     issueNum: String,
     issueDesc: String,
     commentCount: String

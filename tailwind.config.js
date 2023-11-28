@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xxs: ['10px', '14px'],
+      },
       keyframes: {
         fade: {
           '0%': { opacity: 0 },
@@ -20,11 +23,11 @@ module.exports = {
           "100%": { opacity: 1, transform: "translateX(0) scale(1)" }
         },
       },
-animation: {
-  fade: 'fade 1s ease-in-out',
-    slide: 'slide 1s ease-out',
+      animation: {
+        fade: 'fade 1s ease-in-out',
+        slide: 'slide 1s ease-out',
       }
     },
   },
-plugins: [],
+  plugins: [],
 }
