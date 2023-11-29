@@ -4,7 +4,7 @@
             <div class="flex flex-row justify-between items-center">
                 <div class="flex flex-row gap-1 items-center">
                     <img :src="props.imgSrc" alt="avatar" class="h-5 w-5 rounded-md">
-                    <h3 class="font-medium text-xs text-blue-600">{{ props.repo }}</h3>
+                    <h3 class="font-medium text-sm text-blue-600">{{ props.repo }}</h3>
                 </div>
                 <badge bgColor="bg-gray-50" textColor="text-gray-500" borderColor="ring-gray-400">
                     <p class="text-xs">43.3k Stars</p>
